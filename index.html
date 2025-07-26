@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAAD Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+<link href="//fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Miniver&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+  body {
+  font-family: 'Edu NSW ACT Hand Pre', cursive;
+}
+.left{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    
+.home-image{
+    margin: 4rem auto;
+    position: relative;
+    background: url(images/book.jpeg) center/cover  no-repeat ;
+  height: 40vh;
+    border: 2px solid rgb(126, 143, 126);
+    box-shadow: 10px 10px 10px 10px rgb(19, 4, 64);
+    border-radius:50%;
+    width: 40vh;
+    transition: background 1s ease;
+    background-position: bottom;
+}
+
+    
+   
+   @keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  body{
+   font-family: "Edu NSW ACT Hand Pre",cursive;
+    letter-spacing: 2px;
+  }
+}
+
+.color-animate {
+  background: linear-gradient(270deg, #9addf3, #47d46ad7, #f07b9e, #635fe3bb, #d9496d);
+  background-size: 1000% 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+  
+
+  </style>
+</head>
+<body class="bg-indigo-50 text-gray-800">
+
+<!--Navbar -->
+<header class="bg-gradient-to-r from-red-800 via-pink-600 to-purple-600
+
+ text-white shadow fixed w-full top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Left Logo Title Subtitles -->
+    <div class="flex items-start space-x-3 w-full md:w-auto text-left ">
+      <img src="images/jaad_logo (1).png" alt="JAAD Logo" class="w-15 h-20 object-cover mt-1" />
+      <div>
+        <h1 class="text-2xl md:text-4xl font-extrabold left">JAAD Academy</h1>
+        <p class="text-sm md:text-base text-indigo-100 text-center ">For</p>
+        <p class="text-sm md:text-base text-indigo-100">Career Growth and Advancement</p>
+      </div>
+    </div>
+    <!-- Right  Navigation -->
+    <nav class="hidden md:flex space-x-2">
+      <a href="#" class="hover:bg-white hover:text-indigo-700 px-4 py-2 rounded-full transition">Home</a>
+      <a href="#courses" class="hover:bg-white hover:text-indigo-700 px-4 py-2 rounded-full transition">Courses</a>
+      <a href="#tutors" class="hover:bg-white hover:text-indigo-700 px-4 py-2 rounded-full transition">Tutors</a>
+      <a href="#career" class="hover:bg-white hover:text-indigo-700 px-4 py-2 rounded-full transition">Career</a>
+      <a href="#contact" class="hover:bg-white hover:text-indigo-700 px-4 py-2 rounded-full transition">Contact</a>
+    </nav>
+    <!-- Mobile icon -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-gradient-to-r from-red-400 to-purple-700 text-white px-6 py-4 space-y-3 ">
+    <a href="#" class="block hover:underline mobile-link">Home</a>
+    <a href="#courses" class="block hover:underline mobile-link">Courses</a>
+    <a href="#tutors" class="block hover:underline mobile-link">Tutors</a>
+    <a href="#career"  class="block hover:underline mobile-link">Career</a>
+    <a href="#contact" class="block hover:underline mobile-link">Contact</a>
+  </div>
+</header>
+
+<!-- Offset for fixed header -->
+<div class="pt-16"></div>
+
+<!-- outlook -->
+ <section class="bg-gray-900 text-gray-200
+ py-20" data-aos="fade-up">
+  <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+    
+    <!-- Left Text Content -->
+    <div class="text-center lg:text-left max-w-xl">
+      <h2 class="text-4xl font-bold mb-4 color-animate">Empower Your Learning With Us</h2>
+      <p class="text-xl mb-6">Offline classes, Live online classes, Expert mentor, and Personalized tuition for every student.</p>
+      <a href="https://wa.me/919884101997" class="bg-indigo-600 border border-transparent hover:bg-transparent hover:border-blue-500 hover:text-indigo-500 transition-colors duration-300 ease-in text-white px-6 py-3 rounded-lg">
+        Book a Class
+      </a>
+    </div>
+
+    <!-- Right  Image -->
+  <div class="relative w-full h-[200px] overflow-hidden">
+      <div class="home-image">                
+                </div>
+</div>
+
+
+
+  </div>
+</section>
+
+
+  <!-- overview -->
+  <section class="py-16 bg-white" data-aos="fade-right">
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Qualified Tutors</h3>
+        <p>With over 10 years of college teaching experience, our tutor is highly rated and deeply passionate about helping students succeed.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Affordable Pricing</h3>
+        <p>Best quality tuition at pocket-friendly rates.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Flexible Timings</h3>
+        <p>Morning & evening batches to suit your schedule.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- offer -->
+<section id="courses" class="bg-gray-100 py-16 px-6 max-w-6xl mx-auto" data-aos="zoom-in">
+  <h2 class="text-4xl font-bold mb-12 text-center text-indigo-700 color-animate">What We Offer</h2>
+
+  <!-- Tuition Cards -->
+  <div class="mb-16">
+    <h3 class="text-3xl font-semibold mb-8 text-center text-gray-800">Tuition</h3>
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-school')">
+        <h4 class="text-white text-xl font-semibold mb-2 flex justify-between items-center">
+          School Subjects
+          <span id="icon-tuition-school" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-school" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+             <li>Classes 1 to 10 All Subjects - Cbse & State Board </li>
+            <li>Classes 11-12 All Subjects for Bio-Maths</li>
+            <li>Classes 11-12 All Subjects for Cs-Maths</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-ece')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Electronics & Communication (ECE)
+          <span id="icon-tuition-ece" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-ece" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+            <li>Basic Electronics</li>
+            <li>Communication Systems</li>
+            <li>Microprocessors</li>
+            <li>Signal Processing</li>
+            <li>Networks and Security</li>
+            <li>Industrial IoT</li>
+            <li>Microprocessors</li>
+            <li>Digital System Design and more</li>
+          </ul>
+        </div>
+      </div>
+       <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-cse')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Computer Science & IT
+          <span id="icon-tuition-cse" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-cse" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+            <li>Programming Fundamentals</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Database Management</li>
+            <li>Web Development</li>
+            <li>C Programming</li>
+            <li>Python Fundamentals</li>
+            <li>Computer Networks</li>
+            <li>Cyber Security and more</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-mech')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Mechanical Engineering
+          <span id="icon-tuition-mech" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-mech" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+           <li>Thermodynamics</li>
+            <li>Engineering Mechanics</li>
+            <li>Fluid Mechanics</li>
+            <li>Manufacturing Technology</li>
+            <li>Heat Transfer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-eee')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+         Electrical & Electronics (EEE)
+          <span id="icon-tuition-eee" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-eee" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+            <li>Circuits & Systems</li>
+            <li>Electrical Machines</li>
+            <li>Power Electronics</li>
+            <li>Control Systems</li>
+            <li>Signals & Systems</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-aids')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          AI & Data Science (AIDS)
+          <span id="icon-tuition-aids" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-aids" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+           <li>Python Programming</li>
+            <li>Machine Learning</li>
+            <li>Data Science Tools</li>
+            <li>Deep Learning</li>
+            <li>Data Analytics</li>
+            <li>Computer Networks</li>
+            <li>Cyber Security and more</li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-ce')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+         Civil Engineering 
+          <span id="icon-tuition-ce" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-ce" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+            <li>Structural Engineering</li>
+            <li>Soil Mechanics</li>
+            <li>Concrete Technology</li>
+            <li>Surveying</li>
+            <li>Environmental Engineering and more</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gray-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('tuition-ce')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+           CS & Business Systems (CSBS)
+          <span id="icon-tuition-csbs" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="tuition-csbs" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+           <li>Business Analytics</li>
+            <li>IT for Business</li>
+            <li>Cloud & DevOps</li>
+            <li>Fintech and more</li>
+          </ul>
+        </div>
+      </div>
+     
+
+      
+    </div>
+  </div>
+
+  <!-- Course -->
+  <div>
+    <h3 class="text-3xl font-semibold mb-8 text-center text-gray-800">Courses</h3>
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-indigo-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('course-softskills')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Soft Skills
+          <span id="icon-course-softskills" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="course-softskills" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+             <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Time Management</li>
+            <li>Seminars</li>
+            <li> Language development etc</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-indigo-300 text-gray-900 p-6 rounded shadow  cursor-pointer" onclick="toggleCard('course-advanced') ">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Advanced Concepts
+          <span id="icon-course-advanced" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="course-advanced" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+             <li>Full Stack</li>
+            <li> Prompt Engineering</li>
+            <li> Python Programming</li>
+            <li>Internet of Things </li>
+            <li>Generative AI </li>
+            <li> Robotics and Automation</li>
+            <li> Mobile app Development</li>
+            <li> Embedded Systems</li>
+            <li> Operating Systems Fundamentals and more</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-indigo-300 text-gray-900 p-6 rounded shadow cursor-pointer" onclick="toggleCard('course-practical')">
+        <h4 class="text-xl font-semibold mb-2 flex justify-between items-center text-white">
+          Project Training
+          <span id="icon-course-practical" class="transform transition-transform duration-300">+</span>
+        </h4>
+        <div id="course-practical" class="max-h-0 overflow-hidden transition-all duration-500">
+          <ul class="list-disc list-inside">
+            <li>Hands-on Projects</li>
+            <li>Mini-projects</li>
+            <li>School projects</li>
+            <li>Project-Based Learning</li>
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleCard(id) {
+    const content = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      // Collapse
+      content.style.maxHeight = null;
+      icon.textContent = "+";
+    } else {
+      // Expand
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.textContent = "−";
+    }
+  }
+</script>
+
+  <!-- Tutors Section -->
+  <section id="tutors" class="py-16 bg-white" data-aos="fade-left">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10  color-animate">Meet Our Expert Tutor</h2>
+    <div class="flex justify-center">
+      <div class="bg-indigo-50 p-6 rounded shadow max-w-md">
+        <h3 class="font-bold text-xl mb-2">Prof. A. Mohamed Mydeen</h3>
+        <p class="mb-1">B.E., M.E., Ph.D. (Pursuing)</p>
+        <p class="mt-3">
+          Professor with over 20 years of college teaching experience. Specializes in Electronics, Communication Systems, and Embedded Technologies. Known for a student-friendly approach and a passion for quality education.
+        </p>
+        <a href="https://www.linkedin.com/in/a-mohamed-mydeen-b1206b245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+           target="_blank"
+           class="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+          View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- What students Say-->
+<section class="bg-gray-100 py-16 overflow-hidden">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 color-animate">What Students Say</h2>
+
+    <div class="relative overflow-hidden">
+      <div class="flex animate-marquee space-x-6 w-max px-4">
+        
+        <!-- Cards (repeat group for looping) -->
+        <div class="flex space-x-6">
+          <!-- Card 1 -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Sir used to generously share his knowledge and experience with us."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Kannan, AMSCE</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Mydeen sir helped me grasp key concepts in networking and embedded systems."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Mohammed Wafiq, AMSCE</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Doubt-clearing sessions were game changers before my semester exams."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Kabilesh, AMSCE</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Best tutors I've learned from—concepts were made simple and practical!"</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Thariq Ali, AMSCE</span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"The support from tutors was amazing. They cleared every doubt with  clarity."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Mohamed Mujahith, AMSCE</span>
+          </div>
+        </div>
+
+        <!-- Repeat the same group again for seamless loop -->
+        <div class="flex space-x-6">
+          <!-- Same 5 cards duplicated -->
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Mydeen sir helped me grasp key concepts in networking and embedded systems."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Kannan, AMSCE</span>
+          </div>
+
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Sir used to generously share his knowledge and experience with us."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Mohammed Wafiq, AMSCE</span>
+          </div>
+
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"This academy gave me clarity and confidence in Java and Python."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Anjali, CSE</span>
+          </div>
+
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Best tutors I've learned from—concepts were made simple and practical!"</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Raghav, EEE</span>
+          </div>
+
+          <div class="min-w-[300px] max-w-sm bg-white p-6 rounded shadow flex-shrink-0">
+            <p class="text-gray-700">"Live doubt sessions helped me crack my internship interview."</p>
+            <span class="block mt-4 font-semibold text-gray-800">– Swetha, CSBS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+</style>
+
+<!-- carrer -->
+<!-- Career Section -->
+<section id="career" style="background-color: #0a1e4f;" class="py-16  text-gray-800" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Image Section -->
+    <div class="w-full md:w-1/2 text-center">
+      <img src="images/handshake.png" alt="Career Image"
+           class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full mx-auto shadow-lg">
+    </div>
+
+    <!-- Text + Form Section -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-4xl  font-bold text-indigo-700 mb-6 text-center md:text-left color-animate">Career</h2>
+
+      <p class=" text-lg text-white mb-6 text-center   md:text-left">
+        We’re looking for passionate individuals to join our team! 
+        Opportunities available for roles such as 
+        <span class="font-semibold">intern in Web Development, full-time tutor</span>, and more.
+        Whether you're a student or experienced professional, we welcome your journey with us.
+      </p>
+
+      <!-- Toggle Button -->
+      <div class="text-center md:text-left">
+        <button id="showFormBtn" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">
+          Start Your Journey
+        </button>
+      </div>
+
+      <!-- Form (Initially Hidden) -->
+      <form id="careerForm"  action="career.php" class="mt-10 bg-gray-100 p-8 rounded-lg shadow-md hidden" enctype="multipart/form-data">
+        <div class="grid md:grid-cols-2 gap-6 mb-4">
+          <div>
+            <label class="block mb-2 font-semibold">Full Name</label>
+            <input type="text" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300" required>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">Email</label>
+            <input type="email" placeholder="you@example.com" class="w-full p-3 rounded border border-gray-300" required>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">Phone Number</label>
+            <input type="tel" placeholder="+91-98765xxxxx" class="w-full p-3 rounded border border-gray-300" required>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">Upload Resume (PDF)</label>
+            <input type="file" accept=".pdf" class="w-full p-3 rounded border border-gray-300 bg-white" required>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold">Tell us about yourself</label>
+          <textarea rows="5" class="w-full p-3 rounded border border-gray-300" placeholder="Why should we hire you?" required></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="bg-indigo-600 text-white px-8 py-3 rounded hover:bg-indigo-700 transition">
+            Submit Application
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- JavaScript to toggle form -->
+<script>
+  document.getElementById('showFormBtn').addEventListener('click', function () {
+    const form = document.getElementById('careerForm');
+    form.classList.toggle('hidden');
+    form.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+
+
+ <section id="contact" class="relative py-16 bg-gray-50 overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+  <!-- Background image  -->
+  <div 
+    class="absolute inset-0 bg-cover bg-center filter blur-sm opacity-50" 
+    style="background-image: url('images/img3.jpg');">
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12 color-animate">Contact Us</h2>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Contact Details -->
+      <div class="space-y-6">
+        <h3 class="text-2xl font-semibold text-indigo-600">Contact Details</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot text-indigo-600 mt-1"></i>
+            <p>No. 7B, MES Road,Muthapudupet, Avadi IAF Post, Chennai-600 055.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-phone text-indigo-600 mt-1"></i>
+            <p>+91 98841 01997</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fa-regular fa-clock text-indigo-600 mt-1"></i>
+            <p>Monday - Saturday : 09:00 AM - 09:00 PM</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fa-regular fa-envelope text-indigo-600 mt-1"></i>
+            <p>dr.a.m.muhyiddeen@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Contact Now</h3>
+        <form action="contact.php" method="POST" class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name:</label>
+            <input 
+              type="text" 
+              name="user_name" 
+              placeholder="Enter your name" 
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 
+                     transition-transform duration-300 ease-in-out focus:scale-105 focus:shadow-lg"
+            >
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Email:</label>
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="abc@email.com" 
+              required 
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 
+                     transition-transform duration-300 ease-in-out focus:scale-105 focus:shadow-lg"
+            >
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Contact Number:</label>
+            <input 
+              type="tel" 
+              name="phone_number" 
+              placeholder="123-456-7890" 
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 
+                     transition-transform duration-300 ease-in-out focus:scale-105 focus:shadow-lg"
+            >
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">WhatsApp Number:</label>
+            <input 
+              type="tel" 
+              name="whatsapp_number" 
+              placeholder="123-456-7890" 
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 
+                     transition-transform duration-300 ease-in-out focus:scale-105 focus:shadow-lg"
+            >
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Message:</label>
+            <textarea 
+              name="text" 
+              rows="4" 
+              placeholder="Type your message..." 
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 
+                     transition-transform duration-300 ease-in-out focus:scale-105 focus:shadow-lg"
+            ></textarea>
+          </div>
+          <div class="flex gap-4">
+            <input 
+              type="submit" 
+              value="Submit" 
+              class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out hover:shadow-lg cursor-pointer"
+            >
+            <input 
+              type="reset" 
+              value="Clear" 
+              class="bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300 ease-in-out hover:shadow-lg cursor-pointer"
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white px-6 py-8 text-center">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex justify-center space-x-4 text-xl">
+  <a href="#" target="_blank" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/919884101997" target="_blank" class="hover:text-green-400"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.youtube.com" target="_blank" class="hover:text-red-500">
+        <i class="fab fa-youtube text-xl"></i>
+      </a>
+  <a href="#" target="_blank" class="hover:text-gray-400"><i class="fab fa-x-twitter"></i></a>
+  <a href="#" target="_blank" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+  
+  <a href="#" target="_blank" class="hover:text-blue-900"><i class="fab fa-linkedin"></i></a>
+</div>
+
+    <p class="text-sm text-gray-300">&copy; 2025 JAAD Academy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+   
+  });
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+     
+    });
+  });
+
+
+  
+  const images = [
+    "images/pexels-diva-plavalaguna-6937932.jpg",
+    "images/pexels-pixabay-356079.jpg",
+    "images/book.jpeg",
+    "images/book2.jpeg"
+  ];
+
+  let index = 0;
+  const imgElement = document.getElementById("slider");
+
+const homeImg=document.querySelector('.home-image')
+const img=["book.jpeg","book2.jpeg","img3.jpg"]
+
+setInterval(() => {
+    index++;
+    if (index >= img.length) {
+        index = 0;
+    }homeImg.style.background=`url(images/${img[index]}) center/cover  no-repeat`
+},2000
+)
+
+
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("success") === "true") {
+    alert("Thank you! Your form was submitted successfully.");
+  }
+
+
+
+</script>
+</body>
+</html>
